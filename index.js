@@ -1,6 +1,6 @@
 'use strict';
 
-//Minimum
+//#MINIMUM
   //Write a function min that takes two arguments and returns their minimum
 
 function min(value1, value2) {
@@ -21,7 +21,7 @@ console.log(min(null, 9)); //0
 console.log(min(-2,12)); //-2
 console.log(min(undefined, 8)); //NaN
 
-//Recursion
+//#RECURSION
   //A way to determine whether positive whole number is even or odd:
     //Zero is even
     //One is odd
@@ -47,3 +47,19 @@ function isEven(number) {
 console.log(isEven(50));
 console.log(isEven(75));
 console.log(isEven(-1));
+
+//#BEADS??? BEEES??? BEANSSSS
+
+function countChar(string, character) {
+  let count = 0;
+  for (let i = 0; i < string.length; ++i) {
+    if (string[i] == character)
+      count++;
+  }
+  return count;
+}
+
+
+console.log(countChar('BEES', 'B')); //1
+console.log(countChar('boots', 'o')); //2
+console.log(countChar('BooBy trapz', 'x')); //0
